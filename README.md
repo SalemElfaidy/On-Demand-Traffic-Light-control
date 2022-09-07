@@ -1,1 +1,23 @@
 # On-Demand-Traffic-Light-control
+
+## System description
+❑ Traffic light systemconsist of three ledsfor cars and another three for pedestrian.
+❑ We implemented the traffic signals system with an on-demand crosswalk button.
+❑ The crosswalk button give the pedestrian the right to stop the cars during cars crossing and 
+enough time to cross .
+
+## System design
+
+### Hardware requirements:
+1.Atmega32 microcontroller
+2.One push button connected to INT0 pin for pedestrian
+3.Three leds for cars green, yellow, and red, connected on port A, pins 0, 1, and 2
+4.Three leds for pedestrians  green, yellow, and red, connected on port B, pins 0, 1, and 2
+
+###Software requirements:
+Change from normal mode to pedestrian mode when the pedestrian button is pressed.
+If pressed when the cars' Red LED is on, the pedestrian's Green LED and the cars' Red LEDs will be on for five seconds, this means that pedestrians can cross the street while the pedestrian's Green LED is on.
+If pressed when the cars' Green LED is on or the cars' Yellow LED is blinking, the pedestrian Red LED will be on then both Yellow LEDs start to blink for five seconds, then the cars' Red LED and pedestrian Green LEDs are on for five seconds, this means that pedestrian must wait until the Green LED is on.
+At the end of the two states, the cars' Red LED will be off and both Yellow LEDs start blinking for 5 seconds and the pedestrian's Green LED is still on.
+After the five seconds the pedestrian Green LED will be off and both the pedestrian Red LED and the cars' Green LED will be on.
+Traffic lights signals are going to the normal mode again
