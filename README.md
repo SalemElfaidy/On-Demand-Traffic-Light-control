@@ -2,7 +2,9 @@
 
 ## System description
 ❑ Traffic light systemconsist of three ledsfor cars and another three for pedestrian.
+
 ❑ We implemented the traffic signals system with an on-demand crosswalk button.
+
 ❑ The crosswalk button give the pedestrian the right to stop the cars during cars crossing and 
 enough time to cross .
 
@@ -15,6 +17,7 @@ enough time to cross .
 4.Three leds for pedestrians  green, yellow, and red, connected on port B, pins 0, 1, and 2
 
 ###Software requirements:
+
 Change from normal mode to pedestrian mode when the pedestrian button is pressed.
 If pressed when the cars' Red LED is on, the pedestrian's Green LED and the cars' Red LEDs will be on for five seconds, this means that pedestrians can cross the street while the pedestrian's Green LED is on.
 If pressed when the cars' Green LED is on or the cars' Yellow LED is blinking, the pedestrian Red LED will be on then both Yellow LEDs start to blink for five seconds, then the cars' Red LED and pedestrian Green LEDs are on for five seconds, this means that pedestrian must wait until the Green LED is on.
