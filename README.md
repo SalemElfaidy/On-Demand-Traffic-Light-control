@@ -1,33 +1,35 @@
 # On-Demand-Traffic-Light-control
 
+ Coded on Microchip Studio using Atmega32A
+
 ## System description
-❑ Traffic light systemconsist of three ledsfor cars and another three for pedestrian.
+  ❑ Traffic light systemconsist of three ledsfor cars and another three for pedestrian.
 
-❑ We implemented the traffic signals system with an on-demand crosswalk button.
+  ❑ We implemented the traffic signals system with an on-demand crosswalk button.
 
-❑ The crosswalk button give the pedestrian the right to stop the cars during cars crossing and 
-enough time to cross .
+  ❑ The crosswalk button give the pedestrian the right to stop the cars during cars crossing and 
+    enough time to cross .
 
 ## System design
 
 ### Hardware requirements:
-1.Atmega32 microcontroller
+  1. Atmega32 microcontroller
 
-2.One push button connected to INT0 pin for pedestrian
+  2. One push button connected to INT0 pin for pedestrian
 
-3.Three leds for cars green, yellow, and red, connected on port A, pins 0, 1, and 2
+  3. Three leds for cars green, yellow, and red, connected on port A, pins 0, 1, and 2
 
-4.Three leds for pedestrians  green, yellow, and red, connected on port B, pins 0, 1, and 2
+  4. Three leds for pedestrians  green, yellow, and red, connected on port B, pins 0, 1, and 2
 
 ### Software requirements:
 
-#### In normal mode:
-1.Cars' LEDs will be changed every five seconds starting from Green then yellow then red then yellow then Green.
+  #### In normal mode:
+    1. Cars' LEDs will be changed every five seconds starting from Green then yellow then red then yellow then Green.
 
-2.The Yellow LED will blink for five seconds before moving to Green or Red LEDs.
+    2. The Yellow LED will blink for five seconds before moving to Green or Red LEDs.
 
 #### In pedestrian mode:
-Change from normal mode to pedestrian mode when the pedestrian button is pressed.
+    1. Change from normal mode to pedestrian mode when the pedestrian button is pressed.
 
 If pressed when the cars' Red LED is on, the pedestrian's Green LED and the cars' Red LEDs will be on for five seconds, this means that pedestrians can cross the street while the pedestrian's Green LED is on.
 
