@@ -4,7 +4,7 @@
 
 ## System description
   ❑ Traffic light systemconsist of three ledsfor cars and another three for pedestrian.
-
+  
   ❑ We implemented the traffic signals system with an on-demand crosswalk button.
 
   ❑ The crosswalk button give the pedestrian the right to stop the cars during cars crossing and 
